@@ -1,10 +1,29 @@
 footer {
-  display: flex;
-  gap: 24px;
-  padding-block: 24px;
-  font: 14px/150% var(--font-family);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 45% 55%;
+  padding-block: 1rem;
+
+  & span {
+    font: 400 0.875rem/1.5 var(--font-family);
+  }
+  & span:first-child {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  & span:nth-child(2) {
+    text-align: center;
+  }
 }
 
-footer span:nth-child(1) {
-  margin-right: auto;
+@media (width>=80em) {
+  footer {
+    display: flex;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+  }
+
+  footer span:first-child {
+    margin-right: auto;
+  }
 }

@@ -15,10 +15,15 @@
   --text-color-secundary: #6c6c6c;
 
   --font-family: "Poppins", sans-serif;
-  --text-lg: bold 32px/125% var(--font-family);
-  --text: 16px/150% var(--font-family);
-  --text-md: 14px/170% var(--font-family);
-  --text-sm: 12px/170% var(--font-family);
+  --text-lg: bold 1.5rem/125% var(--font-family);
+  --text: 1rem/150% var(--font-family);
+  --text-md: 0.875rem/170% var(--font-family);
+  --text-sm: 0.75rem/170% var(--font-family);
+
+  --px-lg: 1rem;
+  --px-xl: 2rem;
+  --py-lg: 1.25rem;
+  --py-xl: 2rem;
 }
 
 body {
@@ -38,11 +43,20 @@ a:hover {
 }
 
 .container {
-  padding-inline: 32px;
-  max-width: 1280px;
+  max-width: 22.5rem;
   margin-inline: auto;
 }
 
 .bg-surface-color {
   background-color: var(--surface-color);
+}
+
+@media (width>=80em) {
+  :root {
+    --text-lg: bold 2rem/125% var(--font-family);
+    --px-lg: 2rem;
+  }
+  .container {
+    max-width: 80rem;
+  }
 }

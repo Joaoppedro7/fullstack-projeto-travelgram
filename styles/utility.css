@@ -1,0 +1,31 @@
+.desktop-only {
+  display: none;
+}
+
+.px-lg {
+  padding-inline: var(--px-lg);
+}
+
+.px-xl {
+  padding-inline: var(--px-xl);
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
+.grid {
+  display: grid;
+}
+@media (width>=80em) {
+  .desktop-only {
+    display: initial;
+  }
+  .px-lg {
+    padding-inline: 2rem;
+  }
+}
